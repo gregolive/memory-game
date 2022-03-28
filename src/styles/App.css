@@ -12,10 +12,40 @@ body {
 }
 
 main {
-  margin: 0 1rem;
+  color: var(--text);
+  margin: 0 18vw;
   padding: 2rem 0;
   min-height: calc(100vh - 7.5rem);
   box-sizing: border-box;
-  display: flex;
-  justify-content: center;
+  display: grid;
+  align-items: center;
+  justify-content: center; 
+  grid-template: repeat(2, 1fr) / repeat(6, 1fr);
+  gap: 1rem;
+}
+
+@media screen and (max-width: 1200px) {
+  main {
+    margin: 0 11vw;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  main {
+    margin: 0 3vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    margin: 0 10vw;
+    grid-template: repeat(3, 1fr) / repeat(4, 1fr);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  main {
+    margin: 0 1rem;
+    grid-template: repeat(4, 1fr) / repeat(3, 1fr);
+  }
 }

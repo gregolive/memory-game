@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/memory-game/static/css/main.c2954292.css",
+    "main.js": "/memory-game/static/js/main.3f08b4c4.js",
+    "static/media/tamachan.png": "/memory-game/static/media/tamachan.998ae26b7c9face3aeb9.png",
+    "static/media/yamada.png": "/memory-game/static/media/yamada.f342c745cc00edd07e5a.png",
+    "static/media/bootaro.png": "/memory-game/static/media/bootaro.ea9abd4989000a5d2b98.png",
+    "static/media/fujiki.png": "/memory-game/static/media/fujiki.4b810830b9e1e727e7ba.png",
+    "static/media/maruokun.png": "/memory-game/static/media/maruokun.06d07ad5e1e1a925d11e.png",
+    "static/media/fuyutasan.png": "/memory-game/static/media/fuyutasan.c8e4ff3f853bdbefb3ee.png",
+    "static/media/jougasaki.png": "/memory-game/static/media/jougasaki.6c4f48b41d57c974e823.png",
+    "static/media/migiwasan.png": "/memory-game/static/media/migiwasan.af8f9e56caeeeb6d7596.png",
+    "static/media/logo.png": "/memory-game/static/media/logo.13fb4529114ccf43d71a.png",
+    "static/media/sasayamasan.png": "/memory-game/static/media/sasayamasan.3cd6e22bad7e435474c7.png",
+    "static/media/hanawakun.png": "/memory-game/static/media/hanawakun.ef4892d4d3d74e57e186.png",
+    "static/media/sugiyamakun.png": "/memory-game/static/media/sugiyamakun.54f41c9d381e5b5f6394.png",
+    "index.html": "/memory-game/index.html",
+    "main.c2954292.css.map": "/memory-game/static/css/main.c2954292.css.map",
+    "main.3f08b4c4.js.map": "/memory-game/static/js/main.3f08b4c4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c2954292.css",
+    "static/js/main.3f08b4c4.js"
+  ]
+}

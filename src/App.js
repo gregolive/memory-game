@@ -10,16 +10,39 @@ const App = () => {
   const [best, setBest] = useState(0);
   const [guessed, setGuessed] = useState([]);
 
+  const resetGame = () => {
+    setGuessed([]);
+    setScore(0);
+  }
+
   const handleClick = (character) => {
     if (guessed.includes(character)) {
-      setGuessed([]);
-      setScore(0);
+      resetGame();
       return;
     }
     setGuessed(guessed.concat(character));
     setScore(score + 1);
     if (score >= best) { setBest(best + 1); }
   };
+
+  // Get best score from localStorage on component mount
+  useEffect(() => {
+    const storedBest = parseFloat(localStorage.getItem('Best'));
+    if (storedBest) { setBest(storedBest); }
+  }, []);
+
+  // Save best score in localStorage whenever 'best' updates
+  useEffect(() => {
+    localStorage.setItem('Best', best);
+  }, [best]);
+
+  // Check if player has clicked all 22 cards
+  useEffect(() => {
+    if (score === 22) {
+      resetGame();
+      alert('あなたの勝ち！');
+    }
+  }, [score])
 
   return (
     <>

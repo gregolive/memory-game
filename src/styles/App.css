@@ -31,6 +31,10 @@ main {
   gap: 1rem;
 }
 
+.Button {
+  font-family: 'Kosugi Maru', sans-serif;
+}
+
 @media screen and (max-width: 1200px) {
   .CardGrid {
     margin: 0 9vw;

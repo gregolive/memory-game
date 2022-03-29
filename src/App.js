@@ -4,6 +4,7 @@ import randomCharacters from './helpers/characters';
 import Header from './components/Header';
 import Card from './components/Card';
 import Footer from './components/Footer';
+import Instructions from './components/Instructions';
 
 const App = () => {
   const [score, setScore] = useState(0);
@@ -42,7 +43,7 @@ const App = () => {
       resetGame();
       alert('あなたの勝ち！');
     }
-  }, [score])
+  }, [score]);
 
   return (
     <>
@@ -53,6 +54,7 @@ const App = () => {
         </div>
         <Footer/>
       </main>
+      <Instructions/>
     </>
   );
 };

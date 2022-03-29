@@ -1,6 +1,5 @@
 .Card {
   color: var(--text);
-  font-family: 'Kosugi Maru', sans-serif;
   background-color: white;
   border: 4px solid var(--secondary);
   border-radius: 0.5rem;

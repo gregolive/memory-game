@@ -20,7 +20,7 @@ main {
 
 .CardGrid {
   color: var(--text);
-  margin: 0 18vw;
+  margin: 0 16vw;
   padding: 2rem 0;
   height: auto;
   box-sizing: border-box;
@@ -33,19 +33,19 @@ main {
 
 @media screen and (max-width: 1200px) {
   .CardGrid {
-    margin: 0 11vw;
+    margin: 0 9vw;
   }
 }
 
 @media screen and (max-width: 1024px) {
   .CardGrid {
-    margin: 0 3vw;
+    margin: 0 2vw;
   }
 }
 
 @media screen and (max-width: 768px) {
   .CardGrid {
-    margin: 0 10vw;
+    margin: 0 8vw;
     grid-template: repeat(3, 1fr) / repeat(4, 1fr);
   }
 }

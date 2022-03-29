@@ -1,7 +1,7 @@
 import '../styles/Header.css';
 import logo from '../img/logo.png';
 
-const Header = () => {
+const Header = (props) => {
   return (
     <header>
       <div className='HeaderTitle'>
@@ -12,12 +12,12 @@ const Header = () => {
       <div className='Scores'>
         <strong className='ScoreCard'>
           スコア
-          <span>0</span>
+          <span>{props.score}</span>
         </strong>
 
         <strong className='ScoreCard'>
           ベスト
-          <span>0</span>
+          <span>{props.best}</span>
         </strong>
       </div>
     </header>

@@ -12,10 +12,17 @@ body {
 }
 
 main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: calc(100vh - 5rem);
+}
+
+.CardGrid {
   color: var(--text);
   margin: 0 18vw;
   padding: 2rem 0;
-  min-height: calc(100vh - 7.5rem);
+  height: auto;
   box-sizing: border-box;
   display: grid;
   align-items: center;
@@ -25,26 +32,26 @@ main {
 }
 
 @media screen and (max-width: 1200px) {
-  main {
+  .CardGrid {
     margin: 0 11vw;
   }
 }
 
 @media screen and (max-width: 1024px) {
-  main {
+  .CardGrid {
     margin: 0 3vw;
   }
 }
 
 @media screen and (max-width: 768px) {
-  main {
+  .CardGrid {
     margin: 0 10vw;
     grid-template: repeat(3, 1fr) / repeat(4, 1fr);
   }
 }
 
 @media screen and (max-width: 480px) {
-  main {
+  .CardGrid {
     margin: 0 1rem;
     grid-template: repeat(4, 1fr) / repeat(3, 1fr);
   }
